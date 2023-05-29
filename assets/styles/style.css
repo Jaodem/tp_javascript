@@ -1,0 +1,15 @@
+.estilo-p {
+    font-size: calc(0.3em + 1vw);
+}
+
+.estilo-h {
+    font-size: calc(1em + 1vw);
+}
+
+.estilo-b {
+    font-size: calc(0.2em + 1vw);
+}
+
+.foot-color {
+    background-color: #1C4154;
+}
