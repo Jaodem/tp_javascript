@@ -2,12 +2,16 @@
     font-size: calc(0.3em + 1vw);
 }
 
-.estilo-h {
-    font-size: calc(1em + 1vw);
+.estilo-h6 {
+    font-size: calc(0.4em + 1vw);
 }
 
 .estilo-h1 {
-    font-size: calc(1.5em + 1vw);
+    font-size: calc(1.4em + 1.5vw);
+}
+
+.estilo-h2 {
+    font-size: calc(1em + 1.5vw);
 }
 
 .estilo-b {
@@ -15,7 +19,7 @@
 }
 
 .estilo-s {
-    font-size: calc(0.4em + 1vw);
+    font-size: calc(0.4em + 0.7vw);
 }
 
 .foot-color {
