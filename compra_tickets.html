@@ -81,22 +81,22 @@
         <div class="container p-4">
             <div class="nav justify-content-center">
                 <div class="text-center border border-primary p-3 m-1">
-                    <h5>Estudiante</h5>
-                    <p>Tienen un descuento</p>
-                    <h6 class="fw-bold">80%</h6>
-                    <small class="text-secondary">* presentar documentación</small>
+                    <h5 class="estilo-h">Estudiante</h5>
+                    <p class="estilo-p">Tienen un descuento</p>
+                    <h6 class="fw-bold estilo-h">80%</h6>
+                    <small class="text-secondary estilo-p">* presentar documentación</small>
                 </div>
                 <div class="text-center border border-info p-3 m-1">
-                    <h5>Trainee</h5>
-                    <p>Tienen un descuento</p>
-                    <h6 class="fw-bold">50%</h6>
-                    <small class="text-secondary">* presentar documentación</small>
+                    <h5 class="estilo-h">Trainee</h5>
+                    <p class="estilo-p">Tienen un descuento</p>
+                    <h6 class="fw-bold estilo-h">50%</h6>
+                    <small class="text-secondary estilo-p">* presentar documentación</small>
                 </div>
                 <div class="text-center border border-warning p-3 m-1">
-                    <h5>Junior</h5>
-                    <p>Tienen un descuento</p>
-                    <h6 class="fw-bold">15%</h6>
-                    <small class="text-secondary">* presentar documentación</small>
+                    <h5 class="estilo-h">Junior</h5>
+                    <p class="estilo-p">Tienen un descuento</p>
+                    <h6 class="fw-bold estilo-h">15%</h6>
+                    <small class="text-secondary estilo-p">* presentar documentación</small>
                 </div>
             </div>
         </div>
@@ -109,8 +109,8 @@
                 <div class="col-md-10 col-lg-8 col-xl-8 col-xxl-8">
                     <div class="card mt-0 border-0">
                         <div>
-                            <h6 class="text-center fw-normal">VENTA</h6>
-                            <h2 class="text-center">VALOR DE TICKET $200</h2>
+                            <h6 class="text-center fw-normal estilo-h">VENTA</h6>
+                            <h2 class="text-center estilo-h">VALOR DE TICKET $200</h2>
 
                             <form method="post">
                                 <div class="mb-4">
@@ -119,7 +119,7 @@
                                             <input
                                                 class="form-control"
                                                 type="text"
-                                                id="inputNombre"
+                                                id="inputName"
                                                 placeholder="Nombre"
                                             >
                                         </div>
@@ -127,10 +127,14 @@
                                             <input
                                                 class="form-control"
                                                 type="text"
-                                                id="inputApellido"
+                                                id="inputLastname"
                                                 placeholder="Apellido"
                                             >
                                         </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col" id="errorNombre"></div>
+                                        <div class="col" id="errorApellido"></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col m">
@@ -141,6 +145,9 @@
                                                 placeholder="Correo"
                                             >
                                         </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m" id="errorMail"></div>
                                     </div>
                                     <div class="row mt-3">
                                         <div class="col">
@@ -165,16 +172,18 @@
                                             <select
                                                 class="form-select"
                                                 id="selectCategoria">
-                                                    <option selected="">Estudiante</option>
-                                                    <option>Trainee</option>
-                                                    <option>Junior</option>
+                                                    <option value="1">Estudiante</option>
+                                                    <option value="2">Trainee</option>
+                                                    <option value="3">Junior</option>
                                             </select>
                                         </div>
-                                    </div>
+                                        <div class="row mb-3">
+                                            <div class="col" id="errorCantidad"></div>
+                                        </div>
                                 </div>
                                 
-                                <div class="alert alert-primary" role="alert">
-                                    <span id="totalAPagar">Total a pagar: $</span>
+                                <div class="alert alert-primary">
+                                    <span id="total">Total a pagar: $</span>
                                 </div>
                                 
                                 <div>
@@ -182,7 +191,7 @@
                                         <div class="col">
                                             <button
                                                 class="btn w-100 boton text-light"
-                                                id="btnBorrar"
+                                                id="botonBorrar"
                                                 type="reset">
                                                     Borrar
                                             </button>
@@ -190,7 +199,7 @@
                                         <div class="col">
                                             <button
                                                 class="btn w-100 boton text-light"
-                                                id="btnCalcular"
+                                                id="botonCalcular"
                                                 type="button">
                                                     Resumen
                                             </button>
@@ -205,7 +214,7 @@
         </div>
     </section>
 
-    <footer class="text-center foot-color">
+    <footer class="text-center foot-color p-3">
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm col-md col-lg col-xxl">
@@ -273,5 +282,6 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous">
     </script>
+    <script src="./assets/scripts/script.js"></script>
 </body>
 </html>

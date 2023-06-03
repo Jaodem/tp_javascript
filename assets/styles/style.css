@@ -6,8 +6,16 @@
     font-size: calc(1em + 1vw);
 }
 
+.estilo-h1 {
+    font-size: calc(1.5em + 1vw);
+}
+
 .estilo-b {
     font-size: calc(0.2em + 1vw);
+}
+
+.estilo-s {
+    font-size: calc(0.4em + 1vw);
 }
 
 .foot-color {
@@ -16,4 +24,9 @@
 
 .boton {
     background-color: rgba(134, 214, 13, 0.773);
+}
+
+#errorNombre, #errorApellido, #errorMail, #errorCantidad {
+    color: red;
+    margin-left: 10px;
 }
