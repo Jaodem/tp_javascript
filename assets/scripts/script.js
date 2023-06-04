@@ -91,7 +91,13 @@ calcular = () => {
         spanNombre.innerText = '';
         spanApellido.innerText = '';
         spanMail.innerText = '';
-    } else {
+    } else if (cantidad < 1) {
+        spanCantidad.innerText = `La cantidad debe ser un número mayor a 0`;
+        spanNombre.innerText = '';
+        spanApellido.innerText = '';
+        spanMail.innerText = '';
+    }
+    else { 
         importe = valorTicket * cantidad;
         if (categoria == 1) {
             total = importe * 0.2;
